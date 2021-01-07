@@ -1,0 +1,19 @@
+<?php
+
+namespace QBXML\Enums;
+
+use Spatie\Enum\Enum;
+
+/**
+ * Trait EntityTypeFilter
+ * @package QBXML\Enums
+ *
+ * @method static self Customer()
+ * @method static self Employee()
+ * @method static self OtherName()
+ * @method static self Vendor()
+ */
+trait EntityTypeFilter
+{
+
+}

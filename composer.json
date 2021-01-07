@@ -1,0 +1,34 @@
+{
+  "name": "korabe/qbxml",
+  "description": "PHP Library to create and process QBXML",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bryon Bean",
+      "email": "bryon@korabedesign.com"
+    },
+    {
+      "name": "Jared Kozel",
+      "email": "jared@korabedesign.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "QBXML\\": "src/QBXML"
+    }
+  },
+  "require": {
+    "php": ">=7.3",
+    "ext-dom": "*",
+    "ext-json": "*",
+    "ext-libxml": "*",
+    "ext-mbstring": "*",
+    "illuminate/collections": "^8.5",
+    "spatie/enum": "^2.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  }
+}
