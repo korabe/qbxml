@@ -13,48 +13,46 @@ trait DeletedDateRangeFilter
   /**
    * @var DateTime|null
    */
-  private ?DateTime $FromDeletedDate;
+  private ?DateTime $fromDeletedDate;
 
   /**
    * @var DateTime|null
    */
-  private ?DateTime $ToDeletedDate;
+  private ?DateTime $toDeletedDate;
 
   /**
    * @return DateTime|null
    */
   public function getFromDeletedDate(): ?DateTime
   {
-    return $this->FromDeletedDate;
+    return $this->fromDeletedDate;
   }
 
   /**
-   * @param DateTime|null $FromDeletedDate
+   * @param DateTime|null $fromDeletedDate
    * @return self
    */
-  public function setFromDeletedDate(?DateTime $FromDeletedDate): self
+  public function setFromDeletedDate(?DateTime $fromDeletedDate): self
   {
-    $this->FromDeletedDate = $FromDeletedDate;
+    $this->fromDeletedDate = $fromDeletedDate;
     return $this;
   }
-
 
   /**
    * @return DateTime|null
    */
   public function getToDeletedDate(): ?DateTime
   {
-    return $this->ToDeletedDate;
+    return $this->toDeletedDate;
   }
 
   /**
-   * @param DateTime|null $ToDeletedDate
+   * @param DateTime|null $toDeletedDate
    * @return self
    */
-  public function setToDeletedDate(?DateTime $ToDeletedDate): self
+  public function setToDeletedDate(?DateTime $toDeletedDate): self
   {
-    $this->ToDeletedDate = $ToDeletedDate;
+    $this->toDeletedDate = $toDeletedDate;
     return $this;
   }
-
 }

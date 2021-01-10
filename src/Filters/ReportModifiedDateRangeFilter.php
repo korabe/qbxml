@@ -13,48 +13,46 @@ trait ReportModifiedDateRangeFilter
   /**
    * @var DateTime|null
    */
-  private ?DateTime $FromReportModifiedDate;
+  private ?DateTime $fromReportModifiedDate;
 
   /**
    * @var DateTime|null
    */
-  private ?DateTime $ToReportModifiedDate;
+  private ?DateTime $toReportModifiedDate;
 
   /**
    * @return DateTime|null
    */
   public function getFromReportModifiedDate(): ?DateTime
   {
-    return $this->FromReportModifiedDate;
+    return $this->fromReportModifiedDate;
   }
 
   /**
-   * @param DateTime|null $FromReportModifiedDate
+   * @param DateTime|null $fromReportModifiedDate
    * @return self
    */
-  public function setFromReportModifiedDate(?DateTime $FromReportModifiedDate): self
+  public function setFromReportModifiedDate(?DateTime $fromReportModifiedDate): self
   {
-    $this->FromReportModifiedDate = $FromReportModifiedDate;
+    $this->fromReportModifiedDate = $fromReportModifiedDate;
     return $this;
   }
-
 
   /**
    * @return DateTime|null
    */
   public function getToReportModifiedDate(): ?DateTime
   {
-    return $this->ToReportModifiedDate;
+    return $this->toReportModifiedDate;
   }
 
   /**
-   * @param DateTime|null $ToReportModifiedDate
+   * @param DateTime|null $toReportModifiedDate
    * @return self
    */
-  public function setToReportModifiedDate(?DateTime $ToReportModifiedDate): self
+  public function setToReportModifiedDate(?DateTime $toReportModifiedDate): self
   {
-    $this->ToReportModifiedDate = $ToReportModifiedDate;
+    $this->toReportModifiedDate = $toReportModifiedDate;
     return $this;
   }
-
 }

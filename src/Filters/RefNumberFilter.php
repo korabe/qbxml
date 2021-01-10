@@ -13,48 +13,46 @@ trait RefNumberFilter
   /**
    * @var MatchCriterion
    */
-  private MatchCriterion $MatchCriterion;
+  private MatchCriterion $matchCriterion;
 
   /**
    * @var string
    */
-  private string $RefNumber;
+  private string $refNumber;
 
   /**
    * @return MatchCriterion
    */
   public function getMatchCriterion(): MatchCriterion
   {
-    return $this->MatchCriterion;
+    return $this->matchCriterion;
   }
 
   /**
-   * @param MatchCriterion $MatchCriterion
+   * @param MatchCriterion $matchCriterion
    * @return self
    */
-  public function setMatchCriterion(MatchCriterion $MatchCriterion): self
+  public function setMatchCriterion(MatchCriterion $matchCriterion): self
   {
-    $this->MatchCriterion = $MatchCriterion;
+    $this->matchCriterion = $matchCriterion;
     return $this;
   }
-
 
   /**
    * @return string
    */
   public function getRefNumber(): string
   {
-    return $this->RefNumber;
+    return $this->refNumber;
   }
 
   /**
-   * @param string $RefNumber
+   * @param string $refNumber
    * @return self
    */
-  public function setRefNumber(string $RefNumber): self
+  public function setRefNumber(string $refNumber): self
   {
-    $this->RefNumber = $RefNumber;
+    $this->refNumber = $refNumber;
     return $this;
   }
-
 }

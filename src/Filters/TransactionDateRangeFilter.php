@@ -14,53 +14,51 @@ trait TransactionDateRangeFilter
   /**
    * @var DateTime|null
    */
-  private ?DateTime $FromTxnDate;
+  private ?DateTime $fromTxnDate;
 
   /**
    * @var DateTime|null
    */
-  private ?DateTime $ToTxnDate;
+  private ?DateTime $toTxnDate;
 
   /**
    * @var DateMacro|null
    */
-  private ?DateMacro $DateMacro;
+  private ?DateMacro $dateMacro;
 
   /**
    * @return DateTime|null
    */
   public function getFromTxnDate(): ?DateTime
   {
-    return $this->FromTxnDate;
+    return $this->fromTxnDate;
   }
 
   /**
-   * @param DateTime|null $FromTxnDate
+   * @param DateTime|null $fromTxnDate
    * @return self
    */
-  public function setFromTxnDate(?DateTime $FromTxnDate): self
+  public function setFromTxnDate(?DateTime $fromTxnDate): self
   {
-    $this->FromTxnDate = $FromTxnDate;
+    $this->fromTxnDate = $fromTxnDate;
     return $this;
   }
-
 
   /**
    * @return DateTime|null
    */
   public function getToTxnDate(): ?DateTime
   {
-    return $this->ToTxnDate;
+    return $this->toTxnDate;
   }
 
   /**
-   * @param DateTime|null $ToTxnDate
+   * @param DateTime|null $toTxnDate
    * @return self
    */
-  public function setToTxnDate(?DateTime $ToTxnDate): self
+  public function setToTxnDate(?DateTime $toTxnDate): self
   {
-    $this->ToTxnDate = $ToTxnDate;
+    $this->toTxnDate = $toTxnDate;
     return $this;
   }
-
 }

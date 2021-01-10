@@ -13,24 +13,23 @@ trait TransactionTypeFilter
   /**
    * @var TxnTypeFilter
    */
-  private TxnTypeFilter $TxnTypeFilter;
+  private TxnTypeFilter $txnTypeFilter;
 
   /**
    * @return TxnTypeFilter
    */
   public function getTxnTypeFilter(): TxnTypeFilter
   {
-    return $this->TxnTypeFilter;
+    return $this->txnTypeFilter;
   }
 
   /**
-   * @param TxnTypeFilter $TxnTypeFilter
+   * @param TxnTypeFilter $txnTypeFilter
    * @return self
    */
-  public function setTxnTypeFilter(TxnTypeFilter $TxnTypeFilter): self
+  public function setTxnTypeFilter(TxnTypeFilter $txnTypeFilter): self
   {
-    $this->TxnTypeFilter = $TxnTypeFilter;
+    $this->txnTypeFilter = $txnTypeFilter;
     return $this;
   }
-
 }

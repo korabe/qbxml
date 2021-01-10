@@ -13,120 +13,115 @@ trait ReportAccountFilter
   /**
    * @var ?AccountTypeFilter
    */
-  private ?AccountTypeFilter $AccountTypeFilter;
+  private ?AccountTypeFilter $accountTypeFilter;
 
   /**
    * @var ?int
    */
-  private ?int $ListID;
+  private ?int $listID;
 
   /**
    * @var ?string
    */
-  private ?string $FullName;
+  private ?string $fullName;
 
   /**
    * @var ?int
    */
-  private ?int $ListIDWithChildren;
+  private ?int $listIDWithChildren;
 
   /**
    * @var ?string
    */
-  private ?string $FullNameWithChildren;
+  private ?string $fullNameWithChildren;
 
   /**
    * @return AccountTypeFilter|null
    */
   public function getAccountTypeFilter(): ?AccountTypeFilter
   {
-    return $this->AccountTypeFilter;
+    return $this->accountTypeFilter;
   }
 
   /**
-   * @param AccountTypeFilter|null $AccountTypeFilter
+   * @param AccountTypeFilter|null $accountTypeFilter
    * @return self
    */
-  public function setAccountTypeFilter(?AccountTypeFilter $AccountTypeFilter): self
+  public function setAccountTypeFilter(?AccountTypeFilter $accountTypeFilter): self
   {
-    $this->AccountTypeFilter = $AccountTypeFilter;
+    $this->accountTypeFilter = $accountTypeFilter;
     return $this;
   }
-
 
   /**
    * @return int|null
    */
   public function getListID(): ?int
   {
-    return $this->ListID;
+    return $this->listID;
   }
 
   /**
-   * @param int|null $ListID
+   * @param int|null $listID
    * @return self
    */
-  public function setListID(?int $ListID): self
+  public function setListID(?int $listID): self
   {
-    $this->ListID = $ListID;
+    $this->listID = $listID;
     return $this;
   }
-
 
   /**
    * @return string|null
    */
   public function getFullName(): ?string
   {
-    return $this->FullName;
+    return $this->fullName;
   }
 
   /**
-   * @param string|null $FullName
+   * @param string|null $fullName
    * @return self
    */
-  public function setFullName(?string $FullName): self
+  public function setFullName(?string $fullName): self
   {
-    $this->FullName = $FullName;
+    $this->fullName = $fullName;
     return $this;
   }
-
 
   /**
    * @return int|null
    */
   public function getListIDWithChildren(): ?int
   {
-    return $this->ListIDWithChildren;
+    return $this->listIDWithChildren;
   }
 
   /**
-   * @param int|null $ListIDWithChildren
+   * @param int|null $listIDWithChildren
    * @return self
    */
-  public function setListIDWithChildren(?int $ListIDWithChildren): self
+  public function setListIDWithChildren(?int $listIDWithChildren): self
   {
-    $this->ListIDWithChildren = $ListIDWithChildren;
+    $this->listIDWithChildren = $listIDWithChildren;
     return $this;
   }
-
 
   /**
    * @return string|null
    */
   public function getFullNameWithChildren(): ?string
   {
-    return $this->FullNameWithChildren;
+    return $this->fullNameWithChildren;
   }
 
   /**
-   * @param string|null $FullNameWithChildren
+   * @param string|null $fullNameWithChildren
    * @return self
    */
-  public function setFullNameWithChildren(?string $FullNameWithChildren): self
+  public function setFullNameWithChildren(?string $fullNameWithChildren): self
   {
-    $this->FullNameWithChildren = $FullNameWithChildren;
+    $this->fullNameWithChildren = $fullNameWithChildren;
     return $this;
   }
-
 }

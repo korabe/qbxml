@@ -11,48 +11,46 @@ trait NameRangeFilter
   /**
    * @var ?string
    */
-  private ?string $FromName;
+  private ?string $fromName;
 
   /**
    * @var ?string
    */
-  private ?string $ToName;
+  private ?string $toName;
 
   /**
    * @return string|null
    */
   public function getFromName(): ?string
   {
-    return $this->FromName;
+    return $this->fromName;
   }
 
   /**
-   * @param string|null $FromName
+   * @param string|null $fromName
    * @return self
    */
-  public function setFromName(?string $FromName): self
+  public function setFromName(?string $fromName): self
   {
-    $this->FromName = $FromName;
+    $this->fromName = $fromName;
     return $this;
   }
-
 
   /**
    * @return string|null
    */
   public function getToName(): ?string
   {
-    return $this->ToName;
+    return $this->toName;
   }
 
   /**
-   * @param string|null $ToName
+   * @param string|null $toName
    * @return  self
    */
-  public function setToName(?string $ToName): self
+  public function setToName(?string $toName): self
   {
-    $this->ToName = $ToName;
+    $this->toName = $toName;
     return $this;
   }
-
 }

@@ -11,48 +11,46 @@ trait RefNumberRangeFilter
   /**
    * @var string
    */
-  private string $FromRefNumber;
+  private string $fromRefNumber;
 
   /**
    * @var string
    */
-  private string $ToRefNumber;
+  private string $toRefNumber;
 
   /**
    * @return string
    */
   public function getFromRefNumber(): string
   {
-    return $this->FromRefNumber;
+    return $this->fromRefNumber;
   }
 
   /**
-   * @param string $FromRefNumber
+   * @param string $fromRefNumber
    * @return self
    */
-  public function setFromRefNumber(string $FromRefNumber): self
+  public function setFromRefNumber(string $fromRefNumber): self
   {
-    $this->FromRefNumber = $FromRefNumber;
+    $this->fromRefNumber = $fromRefNumber;
     return $this;
   }
-
 
   /**
    * @return string
    */
   public function getToRefNumber(): string
   {
-    return $this->ToRefNumber;
+    return $this->toRefNumber;
   }
 
   /**
-   * @param string $ToRefNumber
+   * @param string $toRefNumber
    * @return self
    */
-  public function setToRefNumber(string $ToRefNumber): self
+  public function setToRefNumber(string $toRefNumber): self
   {
-    $this->ToRefNumber = $ToRefNumber;
+    $this->toRefNumber = $toRefNumber;
     return $this;
   }
-
 }

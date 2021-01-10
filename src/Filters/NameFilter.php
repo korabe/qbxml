@@ -13,48 +13,46 @@ trait NameFilter
   /**
    * @var MatchCriterion
    */
-  private MatchCriterion $MatchCriterion;
+  private MatchCriterion $matchCriterion;
 
   /**
    * @var string
    */
-  private string $Name;
+  private string $name;
 
   /**
    * @return MatchCriterion
    */
   public function getMatchCriterion(): MatchCriterion
   {
-    return $this->MatchCriterion;
+    return $this->matchCriterion;
   }
 
   /**
-   * @param MatchCriterion $MatchCriterion
+   * @param MatchCriterion $matchCriterion
    * @return self
    */
-  public function setMatchCriterion(MatchCriterion $MatchCriterion): self
+  public function setMatchCriterion(MatchCriterion $matchCriterion): self
   {
-    $this->MatchCriterion = $MatchCriterion;
+    $this->matchCriterion = $matchCriterion;
     return $this;
   }
-
 
   /**
    * @return string
    */
   public function getName(): string
   {
-    return $this->Name;
+    return $this->name;
   }
 
   /**
-   * @param string $Name
+   * @param string $name
    * @return self
    */
-  public function setName(string $Name): self
+  public function setName(string $name): self
   {
-    $this->Name = $Name;
+    $this->name = $name;
     return $this;
   }
-
 }

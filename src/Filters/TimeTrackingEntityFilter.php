@@ -11,48 +11,46 @@ trait TimeTrackingEntityFilter
   /**
    * @var ?int
    */
-  private ?int $ListID;
+  private ?int $listID;
 
   /**
    * @var ?string
    */
-  private ?string $FullName;
+  private ?string $fullName;
 
   /**
    * @return int|null
    */
   public function getListID(): ?int
   {
-    return $this->ListID;
+    return $this->listID;
   }
 
   /**
-   * @param int|null $ListID
+   * @param int|null $listID
    * @return self
    */
-  public function setListID(?int $ListID): self
+  public function setListID(?int $listID): self
   {
-    $this->ListID = $ListID;
+    $this->listID = $listID;
     return $this;
   }
-
 
   /**
    * @return string|null
    */
   public function getFullName(): ?string
   {
-    return $this->FullName;
+    return $this->fullName;
   }
 
   /**
-   * @param string|null $FullName
+   * @param string|null $fullName
    * @return self
    */
-  public function setFullName(?string $FullName): self
+  public function setFullName(?string $fullName): self
   {
-    $this->FullName = $FullName;
+    $this->fullName = $fullName;
     return $this;
   }
-
 }

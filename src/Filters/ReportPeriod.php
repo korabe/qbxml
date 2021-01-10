@@ -13,48 +13,46 @@ trait ReportPeriod
   /**
    * @var DateTime|null
    */
-  private ?DateTime $FromReportDate;
+  private ?DateTime $fromReportDate;
 
   /**
    * @var DateTime|null
    */
-  private ?DateTime $ToReportDate;
+  private ?DateTime $toReportDate;
 
   /**
    * @return DateTime|null
    */
   public function getFromReportDate(): ?DateTime
   {
-    return $this->FromReportDate;
+    return $this->fromReportDate;
   }
 
   /**
-   * @param DateTime|null $FromReportDate
+   * @param DateTime|null $fromReportDate
    * @return self
    */
-  public function setFromReportDate(?DateTime $FromReportDate): self
+  public function setFromReportDate(?DateTime $fromReportDate): self
   {
-    $this->FromReportDate = $FromReportDate;
+    $this->fromReportDate = $fromReportDate;
     return $this;
   }
-
 
   /**
    * @return DateTime|null
    */
   public function getToReportDate(): ?DateTime
   {
-    return $this->ToReportDate;
+    return $this->toReportDate;
   }
 
   /**
-   * @param DateTime|null $ToReportDate
+   * @param DateTime|null $toReportDate
    * @return self
    */
-  public function setToReportDate(?DateTime $ToReportDate): self
+  public function setToReportDate(?DateTime $toReportDate): self
   {
-    $this->ToReportDate = $ToReportDate;
+    $this->toReportDate = $toReportDate;
     return $this;
   }
-
 }

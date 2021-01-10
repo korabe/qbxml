@@ -11,48 +11,46 @@ trait ItemSiteFilter
   /**
    * @var ItemFilter|null
    */
-  private ?ItemFilter $ItemFilter;
+  private ?ItemFilter $itemFilter;
 
   /**
    * @var SiteFilter|null
    */
-  private ?SiteFilter $SiteFilter;
+  private ?SiteFilter $siteFilter;
 
   /**
    * @return ItemFilter|null
    */
   public function getItemFilter(): ?ItemFilter
   {
-    return $this->ItemFilter;
+    return $this->itemFilter;
   }
 
   /**
-   * @param ItemFilter|null $ItemFilter
+   * @param ItemFilter|null $itemFilter
    * @return self
    */
-  public function setItemFilter(?ItemFilter $ItemFilter): self
+  public function setItemFilter(?ItemFilter $itemFilter): self
   {
-    $this->ItemFilter = $ItemFilter;
+    $this->itemFilter = $itemFilter;
     return $this;
   }
-
 
   /**
    * @return SiteFilter|null
    */
   public function getSiteFilter(): ?SiteFilter
   {
-    return $this->SiteFilter;
+    return $this->siteFilter;
   }
 
   /**
-   * @param SiteFilter|null $SiteFilter
+   * @param SiteFilter|null $siteFilter
    * @return self
    */
-  public function setSiteFilter(?SiteFilter $SiteFilter): self
+  public function setSiteFilter(?SiteFilter $siteFilter): self
   {
-    $this->SiteFilter = $SiteFilter;
+    $this->siteFilter = $siteFilter;
     return $this;
   }
-
 }

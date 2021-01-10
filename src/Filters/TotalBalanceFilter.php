@@ -13,48 +13,46 @@ trait TotalBalanceFilter
   /**
    * @var Operator
    */
-  private Operator $Operator;
+  private Operator $operator;
 
   /**
    * @var float
    */
-  private float $Amount;
+  private float $amount;
 
   /**
    * @return Operator
    */
   public function getOperator(): Operator
   {
-    return $this->Operator;
+    return $this->operator;
   }
 
   /**
-   * @param Operator $Operator
+   * @param Operator $operator
    * @return self
    */
-  public function setOperator(Operator $Operator): self
+  public function setOperator(Operator $operator): self
   {
-    $this->Operator = $Operator;
+    $this->operator = $operator;
     return $this;
   }
-
 
   /**
    * @return float
    */
   public function getAmount(): float
   {
-    return $this->Amount;
+    return $this->amount;
   }
 
   /**
-   * @param float $Amount
+   * @param float $amount
    * @return self
    */
-  public function setAmount(float $Amount): self
+  public function setAmount(float $amount): self
   {
-    $this->Amount = $Amount;
+    $this->amount = $amount;
     return $this;
   }
-
 }
