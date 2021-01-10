@@ -2,7 +2,6 @@
 
 namespace QBXML\Filters;
 
-
 /**
  * Trait CurrencyFilter
  * @package QBXML\Filters
