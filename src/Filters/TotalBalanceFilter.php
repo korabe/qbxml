@@ -10,47 +10,51 @@ use QBXML\Enums\Operator;
  */
 trait TotalBalanceFilter
 {
-    /**
-     * @var Operator
-     */
-    private Operator $Operator;
+  /**
+   * @var Operator
+   */
+  private Operator $Operator;
 
-    /**
-     * @var float
-     */
-    private float $Amount;
+  /**
+   * @var float
+   */
+  private float $Amount;
 
-    /**
-     * @return Operator
-     */
-    public function getOperator(): Operator
-    {
-        return $this->Operator;
-    }
+  /**
+   * @return Operator
+   */
+  public function getOperator(): Operator
+  {
+    return $this->Operator;
+  }
 
-    /**
-     * @param Operator $Operator
-     * @return self
-     */
-    public function setOperator(Operator $Operator): self
-    {
-        $this->Operator = $Operator;
-    }
+  /**
+   * @param Operator $Operator
+   * @return self
+   */
+  public function setOperator(Operator $Operator): self
+  {
+    $this->Operator = $Operator;
+    return $this;
+  }
 
-    /**
-     * @return float
-     */
-    public function getAmount(): float
-    {
-        return $this->Amount;
-    }
 
-    /**
-     * @param float $Amount
-     * @return self
-     */
-    public function setAmount(float $Amount): self
-    {
-        $this->Amount = $Amount;
-    }
+  /**
+   * @return float
+   */
+  public function getAmount(): float
+  {
+    return $this->Amount;
+  }
+
+  /**
+   * @param float $Amount
+   * @return self
+   */
+  public function setAmount(float $Amount): self
+  {
+    $this->Amount = $Amount;
+    return $this;
+  }
+
 }

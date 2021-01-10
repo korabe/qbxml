@@ -10,47 +10,51 @@ use QBXML\Enums\MatchCriterion;
  */
 trait NameFilter
 {
-    /**
-     * @var MatchCriterion
-     */
-    private MatchCriterion $MatchCriterion ;
+  /**
+   * @var MatchCriterion
+   */
+  private MatchCriterion $MatchCriterion;
 
-    /**
-     * @var string
-     */
-    private string $Name;
+  /**
+   * @var string
+   */
+  private string $Name;
 
-    /**
-     * @return MatchCriterion
-     */
-    public function getMatchCriterion(): MatchCriterion
-    {
-        return $this->MatchCriterion;
-    }
+  /**
+   * @return MatchCriterion
+   */
+  public function getMatchCriterion(): MatchCriterion
+  {
+    return $this->MatchCriterion;
+  }
 
-    /**
-     * @param MatchCriterion $MatchCriterion
-     * @return self
-     */
-    public function setMatchCriterion(MatchCriterion $MatchCriterion): self
-    {
-        $this->MatchCriterion = $MatchCriterion;
-    }
+  /**
+   * @param MatchCriterion $MatchCriterion
+   * @return self
+   */
+  public function setMatchCriterion(MatchCriterion $MatchCriterion): self
+  {
+    $this->MatchCriterion = $MatchCriterion;
+    return $this;
+  }
 
-    /**
-     * @return string
-     */
-    public function getName(): string
-    {
-        return $this->Name;
-    }
 
-    /**
-     * @param string $Name
-     * @return self
-     */
-    public function setName(string $Name): self
-    {
-        $this->Name = $Name;
-    }
+  /**
+   * @return string
+   */
+  public function getName(): string
+  {
+    return $this->Name;
+  }
+
+  /**
+   * @param string $Name
+   * @return self
+   */
+  public function setName(string $Name): self
+  {
+    $this->Name = $Name;
+    return $this;
+  }
+
 }

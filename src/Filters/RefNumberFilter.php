@@ -10,47 +10,51 @@ use QBXML\Enums\MatchCriterion;
  */
 trait RefNumberFilter
 {
-    /**
-     * @var MatchCriterion
-     */
-    private MatchCriterion $MatchCriterion;
+  /**
+   * @var MatchCriterion
+   */
+  private MatchCriterion $MatchCriterion;
 
-    /**
-     * @var string
-     */
-    private string $RefNumber;
+  /**
+   * @var string
+   */
+  private string $RefNumber;
 
-    /**
-     * @return MatchCriterion
-     */
-    public function getMatchCriterion(): MatchCriterion
-    {
-        return $this->MatchCriterion;
-    }
+  /**
+   * @return MatchCriterion
+   */
+  public function getMatchCriterion(): MatchCriterion
+  {
+    return $this->MatchCriterion;
+  }
 
-    /**
-     * @param MatchCriterion $MatchCriterion
-     * @return self
-     */
-    public function setMatchCriterion(MatchCriterion $MatchCriterion): self
-    {
-        $this->MatchCriterion = $MatchCriterion;
-    }
+  /**
+   * @param MatchCriterion $MatchCriterion
+   * @return self
+   */
+  public function setMatchCriterion(MatchCriterion $MatchCriterion): self
+  {
+    $this->MatchCriterion = $MatchCriterion;
+    return $this;
+  }
 
-    /**
-     * @return string
-     */
-    public function getRefNumber(): string
-    {
-        return $this->RefNumber;
-    }
 
-    /**
-     * @param string $RefNumber
-     * @return self
-     */
-    public function setRefNumber(string $RefNumber): self
-    {
-        $this->RefNumber = $RefNumber;
-    }
+  /**
+   * @return string
+   */
+  public function getRefNumber(): string
+  {
+    return $this->RefNumber;
+  }
+
+  /**
+   * @param string $RefNumber
+   * @return self
+   */
+  public function setRefNumber(string $RefNumber): self
+  {
+    $this->RefNumber = $RefNumber;
+    return $this;
+  }
+
 }

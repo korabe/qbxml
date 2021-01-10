@@ -10,47 +10,51 @@ use DateTime;
  */
 trait ModifiedDateRangeFilter
 {
-    /**
-     * @var DateTime|null
-     */
-    private ?DateTime $FromModifiedDate;
+  /**
+   * @var DateTime|null
+   */
+  private ?DateTime $FromModifiedDate;
 
-    /**
-     * @var DateTime|null
-     */
-    private ?DateTime $ToModifiedDate;
+  /**
+   * @var DateTime|null
+   */
+  private ?DateTime $ToModifiedDate;
 
-    /**
-     * @return DateTime|null
-     */
-    public function getFromModifiedDate(): ?DateTime
-    {
-        return $this->FromModifiedDate;
-    }
+  /**
+   * @return DateTime|null
+   */
+  public function getFromModifiedDate(): ?DateTime
+  {
+    return $this->FromModifiedDate;
+  }
 
-    /**
-     * @param DateTime|null $FromModifiedDate
-     * @return self
-     */
-    public function setFromModifiedDate(?DateTime $FromModifiedDate): self
-    {
-        $this->FromModifiedDate = $FromModifiedDate;
-    }
+  /**
+   * @param DateTime|null $FromModifiedDate
+   * @return self
+   */
+  public function setFromModifiedDate(?DateTime $FromModifiedDate): self
+  {
+    $this->FromModifiedDate = $FromModifiedDate;
+    return $this;
+  }
 
-    /**
-     * @return DateTime|null
-     */
-    public function getToModifiedDate(): ?DateTime
-    {
-        return $this->ToModifiedDate;
-    }
 
-    /**
-     * @param DateTime|null $ToModifiedDate
-     * @return self
-     */
-    public function setToModifiedDate(?DateTime $ToModifiedDate): self
-    {
-        $this->ToModifiedDate = $ToModifiedDate;
-    }
+  /**
+   * @return DateTime|null
+   */
+  public function getToModifiedDate(): ?DateTime
+  {
+    return $this->ToModifiedDate;
+  }
+
+  /**
+   * @param DateTime|null $ToModifiedDate
+   * @return self
+   */
+  public function setToModifiedDate(?DateTime $ToModifiedDate): self
+  {
+    $this->ToModifiedDate = $ToModifiedDate;
+    return $this;
+  }
+
 }
