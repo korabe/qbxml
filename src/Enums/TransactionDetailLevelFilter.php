@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait TransactionDetailLevelFilter
+ * Class TransactionDetailLevelFilter
  * @package QBXML\Enums
  *
  * @method static self All()
  * @method static self SummaryOnly()
  * @method static self AllExceptSummary()
  */
-trait TransactionDetailLevelFilter
+class TransactionDetailLevelFilter extends Enum
 {
 
 }

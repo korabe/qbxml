@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait MappingCategory
+ * Class MappingCategory
  * @package QBXML\Enums
  *
  * @method static self BOX1()
@@ -20,7 +22,7 @@ namespace QBXML\Enums;
  * @method static self BOX14()
  * @method static self BOX15()
  */
-trait MappingCategory
+class MappingCategory extends Enum
 {
 
 }

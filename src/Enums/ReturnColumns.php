@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait ReturnColumns
+ * Class ReturnColumns
  * @package QBXML\Enums
  *
  * @method static self ActiveOnly()
  * @method static self NonZero()
  * @method static self All()
  */
-trait ReturnColumns
+class ReturnColumns extends Enum
 {
 
 }

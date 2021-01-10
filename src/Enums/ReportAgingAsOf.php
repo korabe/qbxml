@@ -2,14 +2,16 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait ReportAgingAsOf
+ * Class ReportAgingAsOf
  * @package QBXML\Enums
  *
  * @method static self ReportEndDate()
  * @method static self Today()
  */
-trait ReportAgingAsOf
+class ReportAgingAsOf extends Enum
 {
 
 }

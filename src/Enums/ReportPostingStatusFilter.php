@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait ReportPostingStatusFilter
+ * Class ReportPostingStatusFilter
  * @package QBXML\Enums
  *
  * @method static self Either()
  * @method static self NonPosting()
  * @method static self Posting()
  */
-trait ReportPostingStatusFilter
+class ReportPostingStatusFilter extends Enum
 {
 
 }

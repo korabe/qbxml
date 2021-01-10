@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait PendingStatus
+ * Class PendingStatus
  * @package QBXML\Enums
  *
  * @method static self All()
  * @method static self PendingOnly()
  * @method static self NotPendingOnly()
  */
-trait PendingStatus
+class PendingStatus extends Enum
 {
 
 }

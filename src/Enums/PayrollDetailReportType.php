@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait PayrollDetailReportType
+ * Class PayrollDetailReportType
  * @package QBXML\Enums
  *
  * @method static self EmployeeStateTaxesDetail()
@@ -12,7 +14,7 @@ namespace QBXML\Enums;
  * @method static self PayrollTransactionDetail()
  * @method static self PayrollTransactionsByPayee()
  */
-trait PayrollDetailReportType
+class PayrollDetailReportType extends Enum
 {
 
 }

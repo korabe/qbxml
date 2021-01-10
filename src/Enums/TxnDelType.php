@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait TxnDelType
+ * Class TxnDelType
  * @package QBXML\Enums
  *
  * @method static self ARRefundCreditCard,
@@ -35,7 +37,7 @@ namespace QBXML\Enums;
  * @method static self VehicleMileage()
  * @method static self VendorCredit()
  */
-trait TxnDelType
+class TxnDelType extends Enum
 {
 
 }

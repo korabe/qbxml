@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait TransactionPaidStatusFilter
+ * Class TransactionPaidStatusFilter
  * @package QBXML\Enums
  *
  * @method static self Either()
  * @method static self Closed()
  * @method static self Open()
  */
-trait TransactionPaidStatusFilter
+class TransactionPaidStatusFilter extends Enum
 {
 
 }

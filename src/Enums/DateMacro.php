@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait DateMacro
+ * Class DateMacro
  * @package QBXML\Enums
  *
  * @method static self All()
@@ -41,7 +43,7 @@ namespace QBXML\Enums;
  * @method static self NextFiscalQuarter()
  * @method static self NextFiscalYear()
  */
-trait DateMacro
+class DateMacro extends Enum
 {
 
 }

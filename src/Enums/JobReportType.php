@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait JobReportType
+ * Class JobReportType
  * @package QBXML\Enums
  *
  * @method static self ItemEstimatesVsActuals()
@@ -13,7 +15,7 @@ namespace QBXML\Enums;
  * @method static self JobProfitabilityDetail()
  * @method static self JobProfitabilitySummary()
  */
-trait JobReportType
+class JobReportType extends Enum
 {
 
 }

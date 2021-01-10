@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait ItemTypeFilter
+ * Class ItemTypeFilter
  * @package QBXML\Enums
  *
  * @method static self AllExceptFixedAsset()
@@ -19,7 +21,7 @@ namespace QBXML\Enums;
  * @method static self SalesTax()
  * @method static self Service()
  */
-trait ItemTypeFilter
+class ItemTypeFilter extends Enum
 {
 
 }

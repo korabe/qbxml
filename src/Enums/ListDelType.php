@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait ListDelType
+ * Class ListDelType
  * @package QBXML\Enums
  *
  * @method static self Account()
@@ -45,7 +47,7 @@ namespace QBXML\Enums;
  * @method static self VendorType()
  * @method static self WorkersCompCode()
  */
-trait ListDelType
+class ListDelType extends Enum
 {
 
 }

@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait ReportModifiedDateRangeMacro
+ * Class ReportModifiedDateRangeMacro
  * @package QBXML\Enums
  *
  * @method static self All()
@@ -31,7 +33,7 @@ namespace QBXML\Enums;
  * @method static self NextQuarter()
  * @method static self NextYear()
  */
-trait ReportModifiedDateRangeMacro
+class ReportModifiedDateRangeMacro extends Enum
 {
 
 }

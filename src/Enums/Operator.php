@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait Operator
+ * Class Operator
  * @package QBXML\Enums
  *
  * @method static self LessThan()
@@ -12,7 +14,7 @@ namespace QBXML\Enums;
  * @method static self GreaterThan()
  * @method static self GreaterThanEqual()
  */
-trait Operator
+class Operator extends Enum
 {
 
 }

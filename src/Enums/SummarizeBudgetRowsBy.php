@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait SummarizeBudgetRowsBy
+ * Class SummarizeBudgetRowsBy
  * @package QBXML\Enums
  *
  * @method static self Account()
  * @method static self Class()
  * @method static self Customer()
  */
-trait SummarizeBudgetRowsBy
+class SummarizeBudgetRowsBy extends Enum
 {
 
 }

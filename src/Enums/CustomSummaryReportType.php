@@ -2,13 +2,15 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait CustomSummaryReportType
+ * Class CustomSummaryReportType
  * @package QBXML\Enums
  *
  * @method static self CustomSummary()
  */
-trait CustomSummaryReportType
+class CustomSummaryReportType extends Enum
 {
 
 }

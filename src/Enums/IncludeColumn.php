@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait IncludeColumn
+ * Class IncludeColumn
  * @package QBXML\Enums
  *
  * @method static self Account()
@@ -82,7 +84,7 @@ namespace QBXML\Enums;
  * @method static self WageBase()
  * @method static self WageBaseTips()
  */
-trait IncludeColumn
+class IncludeColumn extends Enum
 {
 
 }

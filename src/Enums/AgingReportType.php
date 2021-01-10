@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait AgingReportType
+ * Class AgingReportType
  * @package QBXML\Enums
  *
  * @method static self APAgingDetail()
@@ -12,7 +14,7 @@ namespace QBXML\Enums;
  * @method static self ARAgingSummary()
  * @method static self CollectionsReport()
  */
-trait AgingReportType
+class AgingReportType extends Enum
 {
 
 }

@@ -2,13 +2,15 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait CustomDetailReportType
+ * Class CustomDetailReportType
  * @package QBXML\Enums
  *
  * @method static self CustomTxnDetail()
  */
-trait CustomDetailReportType
+class CustomDetailReportType extends Enum
 {
 
 }

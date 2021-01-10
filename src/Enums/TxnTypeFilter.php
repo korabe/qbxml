@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait TxnTypeFilter
+ * Class TxnTypeFilter
  * @package QBXML\Enums
  *
  * @method static self All()
@@ -35,7 +37,7 @@ namespace QBXML\Enums;
  * @method static self VendorCredit()
  * @method static self YTDAdjustment()
  */
-trait TxnTypeFilter
+class TxnTypeFilter extends Enum
 {
 
 }

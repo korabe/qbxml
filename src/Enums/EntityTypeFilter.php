@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait EntityTypeFilter
+ * Class EntityTypeFilter
  * @package QBXML\Enums
  *
  * @method static self Customer()
@@ -11,7 +13,7 @@ namespace QBXML\Enums;
  * @method static self OtherName()
  * @method static self Vendor()
  */
-trait EntityTypeFilter
+class EntityTypeFilter extends Enum
 {
 
 }

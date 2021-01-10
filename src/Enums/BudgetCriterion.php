@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait BudgetCriterion
+ * Class BudgetCriterion
  * @package QBXML\Enums
  *
  * @method static self Accounts()
  * @method static self AccountsAndClasses()
  * @method static self AccountsAndCustomers()
  */
-trait BudgetCriterion
+class BudgetCriterion extends Enum
 {
 
 }

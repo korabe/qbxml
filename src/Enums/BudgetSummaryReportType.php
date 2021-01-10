@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait BudgetSummaryReportType
+ * Class BudgetSummaryReportType
  * @package QBXML\Enums
  *
  * @method static self BalanceSheetBudgetOverview()
@@ -12,7 +14,7 @@ namespace QBXML\Enums;
  * @method static self ProfitAndLossBudgetPerformance()
  * @method static self ProfitAndLossBudgetVsActual()
  */
-trait BudgetSummaryReportType
+class BudgetSummaryReportType extends Enum
 {
 
 }

@@ -2,15 +2,17 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait ActiveStatus
+ * Class ActiveStatus
  * @package QBXML\Enums
  *
  * @method static self ActiveOnly()
  * @method static self InactiveOnly()
  * @method static self All()
  */
-trait ActiveStatus
+class ActiveStatus extends Enum
 {
 
 }

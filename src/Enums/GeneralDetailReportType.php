@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait GeneralDetailReportType
+ * Class GeneralDetailReportType
  * @package QBXML\Enums
  *
  * @method static self 1099Detail()
@@ -41,7 +43,7 @@ namespace QBXML\Enums;
  * @method static self UnbilledCostsByJob()
  * @method static self VendorBalanceDetail()
  */
-trait GeneralDetailReportType
+class GeneralDetailReportType extends Enum
 {
 
 }

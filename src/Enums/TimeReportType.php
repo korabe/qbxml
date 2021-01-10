@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait TimeReportType
+ * Class TimeReportType
  * @package QBXML\Enums
  *
  * @method static self TimeByItem()
@@ -11,7 +13,7 @@ namespace QBXML\Enums;
  * @method static self TimeByJobSummary()
  * @method static self TimeByName()
  */
-trait TimeReportType
+class TimeReportType extends Enum
 {
 
 }

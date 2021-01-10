@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait AssignToObject
+ * Class AssignToObject
  * @package QBXML\Enums
  *
  * @method static self Account()
@@ -36,7 +38,7 @@ namespace QBXML\Enums;
  * @method static self Vendor()
  * @method static self VendorCredit()
  */
-trait AssignToObject
+class AssignToObject extends Enum
 {
 
 }

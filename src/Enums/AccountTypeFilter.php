@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait AccountTypeFilter
+ * Class AccountTypeFilter
  * @package QBXML\Enums
  *
  * @method static self AccountsPayable()
@@ -43,7 +45,7 @@ namespace QBXML\Enums;
  * @method static self OtherIncome()
  * @method static self OtherIncomeOrExpense()
  */
-trait AccountTypeFilter
+class AccountTypeFilter extends Enum
 {
 
 }

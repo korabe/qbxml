@@ -2,8 +2,10 @@
 
 namespace QBXML\Enums;
 
+use Spatie\Enum\Enum;
+
 /**
- * Trait SummarizeRowsBy
+ * Class SummarizeRowsBy
  * @package QBXML\Enums
  *
  * @method static self Account()
@@ -36,7 +38,7 @@ namespace QBXML\Enums;
  * @method static self Week()
  * @method static self Year()
  */
-trait SummarizeRowsBy
+class SummarizeRowsBy extends Enum
 {
 
 }
