@@ -12,7 +12,7 @@ trait CurrencyFilter
   /**
    * @var ?int
    */
-  private ?int $listID;
+  private ?int $listId;
 
   /**
    * @var ?string
@@ -22,18 +22,18 @@ trait CurrencyFilter
   /**
    * @return int|null
    */
-  public function getListID(): ?int
+  public function getListId(): ?int
   {
-    return $this->listID;
+    return $this->listId;
   }
 
   /**
-   * @param int|null $listID
+   * @param int|null $listId
    * @return self
    */
-  public function setListID(?int $listID): self
+  public function setListId(?int $listId): self
   {
-    $this->listID = $listID;
+    $this->listId = $listId;
     return $this;
   }
 
