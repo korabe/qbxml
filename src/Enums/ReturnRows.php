@@ -2,8 +2,6 @@
 
 namespace QBXML\Enums;
 
-use Spatie\Enum\Enum;
-
 /**
  * Trait ReturnRows
  * @package QBXML\Enums

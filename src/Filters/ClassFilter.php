@@ -100,3 +100,4 @@ trait ClassFilter
     return $this;
   }
 }
+

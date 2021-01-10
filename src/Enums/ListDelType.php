@@ -2,12 +2,10 @@
 
 namespace QBXML\Enums;
 
-use Spatie\Enum\Enum;
-
 /**
  * Trait ListDelType
  * @package QBXML\Enums
- * 
+ *
  * @method static self Account()
  * @method static self BillingRate()
  * @method static self Class()

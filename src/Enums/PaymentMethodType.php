@@ -2,12 +2,10 @@
 
 namespace QBXML\Enums;
 
-use Spatie\Enum\Enum;
-
 /**
  * Trait PaymentMethodType
  * @package QBXML\Enums
- * 
+ *
  * @method static self AmericanExpress()
  * @method static self Cash()
  * @method static self Check()

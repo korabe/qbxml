@@ -2,12 +2,10 @@
 
 namespace QBXML\Enums;
 
-use Spatie\Enum\Enum;
-
 /**
  * Trait IncludeColumn
  * @package QBXML\Enums
- * 
+ *
  * @method static self Account()
  * @method static self Aging()
  * @method static self Amount()

@@ -2,12 +2,10 @@
 
 namespace QBXML\Enums;
 
-use Spatie\Enum\Enum;
-
 /**
  * Trait TxnDelType
  * @package QBXML\Enums
- * 
+ *
  * @method static self ARRefundCreditCard,
  * @method static self Bill,
  * @method static self BillPaymentCheck,

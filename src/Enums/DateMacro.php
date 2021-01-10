@@ -2,12 +2,10 @@
 
 namespace QBXML\Enums;
 
-use Spatie\Enum\Enum;
-
 /**
  * Trait DateMacro
  * @package QBXML\Enums
- * 
+ *
  * @method static self All()
  * @method static self Today()
  * @method static self ThisWeek()

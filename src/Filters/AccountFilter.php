@@ -100,3 +100,4 @@ trait AccountFilter
     return $this;
   }
 }
+

@@ -44,8 +44,6 @@ trait ItemFilter
   {
     $this->listID = $listID;
     return $this;
-
-    return $this;
   }
 
   /**

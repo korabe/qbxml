@@ -2,12 +2,10 @@
 
 namespace QBXML\Enums;
 
-use Spatie\Enum\Enum;
-
 /**
  * Trait SummarizeColumnsBy
  * @package QBXML\Enums
- * 
+ *
  * @method static self Account()
  * @method static self BalanceSheet()
  * @method static self Class()
