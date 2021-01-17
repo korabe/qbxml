@@ -4,12 +4,13 @@ namespace QBXML\Filters;
 
 use DateTime;
 use QBXML\Enums\DateMacro;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait TransactionModifiedDateRangeFilter
+ * Class TransactionModifiedDateRangeFilter
  * @package QBXML\Filters
  */
-trait TransactionModifiedDateRangeFilter
+class TransactionModifiedDateRangeFilter implements FilterInterface
 {
   /**
    * @var DateTime|null
@@ -78,5 +79,15 @@ trait TransactionModifiedDateRangeFilter
   {
     $this->dateMacro = $dateMacro;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use DateTime;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait ModifiedDateRangeFilter
+ * Class ModifiedDateRangeFilter
  * @package QBXML\Filters
  */
-trait ModifiedDateRangeFilter
+class ModifiedDateRangeFilter implements FilterInterface
 {
   /**
    * @var DateTime|null
@@ -54,5 +55,15 @@ trait ModifiedDateRangeFilter
   {
     $this->toModifiedDate = $toModifiedDate;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

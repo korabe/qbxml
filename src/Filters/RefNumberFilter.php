@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use QBXML\Enums\MatchCriterion;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait RefNumberFilter
+ * Class RefNumberFilter
  * @package QBXML\Filters
  */
-trait RefNumberFilter
+class RefNumberFilter implements FilterInterface
 {
   /**
    * @var MatchCriterion
@@ -54,5 +55,15 @@ trait RefNumberFilter
   {
     $this->refNumber = $refNumber;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

@@ -3,11 +3,13 @@
 namespace QBXML\Filters;
 
 
+use QBXML\Queries\FilterInterface;
+
 /**
- * Trait SiteFilter
+ * Class SiteFilter
  * @package QBXML\Filters
  */
-trait SiteFilter
+class SiteFilter implements FilterInterface
 {
   /**
    * @var ?int
@@ -53,5 +55,15 @@ trait SiteFilter
   {
     $this->fullName = $fullName;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

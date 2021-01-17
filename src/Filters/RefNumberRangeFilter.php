@@ -2,11 +2,13 @@
 
 namespace QBXML\Filters;
 
+use QBXML\Queries\FilterInterface;
+
 /**
- * Trait RefNumberRangeFilter
+ * Class RefNumberRangeFilter
  * @package QBXML\Filters
  */
-trait RefNumberRangeFilter
+class RefNumberRangeFilter implements FilterInterface
 {
   /**
    * @var string
@@ -52,5 +54,15 @@ trait RefNumberRangeFilter
   {
     $this->toRefNumber = $toRefNumber;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

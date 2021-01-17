@@ -2,11 +2,14 @@
 
 namespace QBXML\Filters;
 
+use QBXML\Queries\FilterInterface;
+
 /**
  * Class ListIdFilter
+ *
  * @package QBXML\Filters
  */
-class ListIdFilter implements \QBXML\Queries\FilterInterface
+class ListIdFilter implements FilterInterface
 {
   /**
    * @inheritDoc

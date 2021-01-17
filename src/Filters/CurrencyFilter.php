@@ -2,11 +2,13 @@
 
 namespace QBXML\Filters;
 
+use QBXML\Queries\FilterInterface;
+
 /**
- * Trait CurrencyFilter
+ * Class CurrencyFilter
  * @package QBXML\Filters
  */
-trait CurrencyFilter
+class CurrencyFilter implements FilterInterface
 {
   /**
    * @var ?int
@@ -52,5 +54,15 @@ trait CurrencyFilter
   {
     $this->fullName = $fullName;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

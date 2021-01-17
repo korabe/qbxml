@@ -4,12 +4,13 @@ namespace QBXML\Filters;
 
 use DateTime;
 use QBXML\Enums\DateMacro;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait TxnDateRangeFilter
+ * Class TxnDateRangeFilter
  * @package QBXML\Filters
  */
-trait TxnDateRangeFilter
+class TxnDateRangeFilter implements FilterInterface
 {
   /**
    * @var DateTime|null
@@ -60,5 +61,15 @@ trait TxnDateRangeFilter
   {
     $this->toTxnDate = $toTxnDate;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use DateTime;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait ReportPeriod
+ * Class ReportPeriod
  * @package QBXML\Filters
  */
-trait ReportPeriod
+class ReportPeriod implements FilterInterface
 {
   /**
    * @var DateTime|null
@@ -54,5 +55,15 @@ trait ReportPeriod
   {
     $this->toReportDate = $toReportDate;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

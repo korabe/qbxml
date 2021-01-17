@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use QBXML\Enums\Operator;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait TotalBalanceFilter
+ * Class TotalBalanceFilter
  * @package QBXML\Filters
  */
-trait TotalBalanceFilter
+class TotalBalanceFilter implements FilterInterface
 {
   /**
    * @var Operator
@@ -54,5 +55,15 @@ trait TotalBalanceFilter
   {
     $this->amount = $amount;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

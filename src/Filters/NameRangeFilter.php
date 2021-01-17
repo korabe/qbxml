@@ -2,11 +2,13 @@
 
 namespace QBXML\Filters;
 
+use QBXML\Queries\FilterInterface;
+
 /**
- * Trait NameRangeFilter
+ * Class NameRangeFilter
  * @package QBXML\Filters
  */
-trait NameRangeFilter
+class NameRangeFilter implements FilterInterface
 {
   /**
    * @var ?string
@@ -52,5 +54,15 @@ trait NameRangeFilter
   {
     $this->toName = $toName;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }
