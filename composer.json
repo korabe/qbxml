@@ -16,7 +16,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "QBXML\\": "src/QBXML"
+      "QBXML\\": ["src/", "tests/"]
     }
   },
   "require": {
