@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use QBXML\Enums\TxnTypeFilter;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait ReportTxnTypeFilter
+ * Class ReportTxnTypeFilter
  * @package QBXML\Filters
  */
-trait ReportTxnTypeFilter
+class ReportTxnTypeFilter implements FilterInterface
 {
   /**
    * @var TxnTypeFilter
@@ -31,5 +32,15 @@ trait ReportTxnTypeFilter
   {
     $this->txnTypeFilter = $txnTypeFilter;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

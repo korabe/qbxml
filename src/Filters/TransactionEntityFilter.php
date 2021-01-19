@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use QBXML\Enums\EntityTypeFilter;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait TransactionEntityFilter
+ * Class TransactionEntityFilter
  * @package QBXML\Filters
  */
-trait TransactionEntityFilter
+class TransactionEntityFilter implements FilterInterface
 {
   /**
    * @var ?EntityTypeFilter
@@ -123,5 +124,15 @@ trait TransactionEntityFilter
   {
     $this->fullNameWithChildren = $fullNameWithChildren;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

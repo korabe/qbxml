@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use QBXML\Enums\AccountTypeFilter;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait TransactionAccountFilter
+ * Class TransactionAccountFilter
  * @package QBXML\Filters
  */
-trait TransactionAccountFilter
+class TransactionAccountFilter implements FilterInterface
 {
   /**
    * @var ?AccountTypeFilter
@@ -123,5 +124,15 @@ trait TransactionAccountFilter
   {
     $this->fullNameWithChildren = $fullNameWithChildren;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }

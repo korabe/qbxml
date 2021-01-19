@@ -3,12 +3,13 @@
 namespace QBXML\Filters;
 
 use QBXML\Enums\MatchCriterion;
+use QBXML\Queries\FilterInterface;
 
 /**
- * Trait NameFilter
+ * Class NameFilter
  * @package QBXML\Filters
  */
-trait NameFilter
+class NameFilter implements FilterInterface
 {
   /**
    * @var MatchCriterion
@@ -19,6 +20,11 @@ trait NameFilter
    * @var string
    */
   private string $name;
+
+  public function __construct()
+  {
+    parent::__construct('NameFilter');
+  }
 
   /**
    * @return MatchCriterion
@@ -54,5 +60,18 @@ trait NameFilter
   {
     $this->name = $name;
     return $this;
+  }
+
+  /**
+   * @return string
+   */
+  public function __toString(): string
+  {
+    $filter = str_replace(__NAMESPACE__ . '\\', '', __CLASS__);
+    $qbxml = "<{$this->getFilterName()}>";
+    $qbxml .= "<MatchCriterion>{$this->matchCriterion}</MatchCriterion>";
+    $qbxml .= "<Name>{$this->name}</Name>";
+    $qbxml .= "</{$filter}>";
+    return $qbxml;
   }
 }

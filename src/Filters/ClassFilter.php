@@ -2,11 +2,13 @@
 
 namespace QBXML\Filters;
 
+use QBXML\Queries\FilterInterface;
+
 /**
- * Trait ClassFilter
+ * Class ClassFilter
  * @package QBXML\Filters
  */
-trait ClassFilter
+class ClassFilter implements FilterInterface
 {
   /**
    * @var ?int
@@ -98,6 +100,16 @@ trait ClassFilter
   {
     $this->fullNameWithChildren = $fullNameWithChildren;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }
 

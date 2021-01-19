@@ -2,102 +2,113 @@
 
 namespace QBXML\Filters;
 
+use QBXML\Queries\FilterInterface;
+
 /**
- * Trait AccountFilter
+ * Class AccountFilter
  * @package QBXML\Filters
  */
-trait AccountFilter
+class AccountFilter implements FilterInterface
 {
+  protected array $listId = [];
+  protected array $fullName = [];
+  protected string $listIdWithChildren = '';
+  protected string $fullNameWithChildren = '';
+  
   /**
-   * @var ?int
+   * AccountFilter constructor
    */
-  private ?int $listId;
+  public function __construct()
+  {
+    parent::__construct('AccountFilter');
+  }
 
   /**
-   * @var ?string
+   * @return array
    */
-  private ?string $fullName;
-
-  /**
-   * @var ?int
-   */
-  private ?int $listIdWithChildren;
-
-  /**
-   * @var ?string
-   */
-  private ?string $fullNameWithChildren;
-
-  /**
-   * @return int|null
-   */
-  public function getListId(): ?int
+  public function getListId(): array
   {
     return $this->listId;
   }
 
   /**
-   * @param int|null $listId
+   * @param array<string> $listId
    * @return self
    */
-  public function setListId(?int $listId): self
+  public function setListId(array $listId): self
   {
     $this->listId = $listId;
     return $this;
   }
 
   /**
-   * @return string|null
+   * @return array<string>
    */
-  public function getFullName(): ?string
+  public function getFullName(): array
   {
     return $this->fullName;
   }
 
   /**
-   * @param string|null $fullName
+   * @param array<string> $fullName
    * @return self
    */
-  public function setFullName(?string $fullName): self
+  public function setFullName(array $fullName): self
   {
     $this->fullName = $fullName;
     return $this;
   }
 
   /**
-   * @return int|null
+   * @return string
    */
-  public function getListIdWithChildren(): ?int
+  public function getListIdWithChildren(): string
   {
     return $this->listIdWithChildren;
   }
 
   /**
-   * @param int|null $listIdWithChildren
+   * @param string $listIdWithChildren
    * @return self
    */
-  public function setListIdWithChildren(?int $listIdWithChildren): self
+  public function setListIdWithChildren(string $listIdWithChildren): self
   {
     $this->listIdWithChildren = $listIdWithChildren;
     return $this;
   }
 
   /**
-   * @return string|null
+   * @return string
    */
-  public function getFullNameWithChildren(): ?string
+  public function getFullNameWithChildren(): string
   {
     return $this->fullNameWithChildren;
   }
 
   /**
-   * @param string|null $fullNameWithChildren
+   * @param string $fullNameWithChildren
    * @return self
    */
-  public function setFullNameWithChildren(?string $fullNameWithChildren): self
+  public function setFullNameWithChildren(string $fullNameWithChildren): self
   {
     $this->fullNameWithChildren = $fullNameWithChildren;
     return $this;
+  }
+  
+  /**
+   * @return string
+   */
+  public function __toString(): string
+  {
+    $property = '';
+    $weighted_properties = ['listId', 'fullName', 'listIdWithChildren', 'fullNameWithChildren'];
+    foreach ($weighted_properties as $prop) {
+      if (!empty($this->$prop)) {
+        $property = $prop;
+        break;
+      }
+    }
+    return empty($property) ? '' : $this->toXml($property);
   }
 }
 

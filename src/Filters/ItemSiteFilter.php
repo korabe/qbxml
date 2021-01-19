@@ -2,11 +2,13 @@
 
 namespace QBXML\Filters;
 
+use QBXML\Queries\FilterInterface;
+
 /**
- * Trait ItemSiteFilter
+ * Class ItemSiteFilter
  * @package QBXML\Filters
  */
-trait ItemSiteFilter
+class ItemSiteFilter implements FilterInterface
 {
   /**
    * @var ItemFilter|null
@@ -52,5 +54,15 @@ trait ItemSiteFilter
   {
     $this->siteFilter = $siteFilter;
     return $this;
+  }
+  
+  /**
+   * Returns the filter's QBXML
+   *
+   * @return string
+   */
+  public function __toString(): string
+  {
+    // TODO: Implement __toString() method.
   }
 }
