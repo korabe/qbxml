@@ -14,5 +14,4 @@ use Spatie\Enum\Enum;
  */
 class ActiveStatus extends Enum
 {
-
 }
