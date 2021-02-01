@@ -2,9 +2,6 @@
 
 namespace QBXML\Filters;
 
-use QBXML\Queries\FilterInterface;
-use Spatie\Enum\Enum;
-
 /**
  * Class Filter
  * @package QBXML\Filters

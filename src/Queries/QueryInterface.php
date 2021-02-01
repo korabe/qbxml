@@ -2,8 +2,6 @@
 
 namespace QBXML\Queries;
 
-use Spatie\Enum\Enum;
-
 /**
  * QBXML queries fall in one of three categories:
  *   - List query
@@ -35,4 +33,10 @@ interface QueryInterface
    * @return QueryInterface
    */
   public function merge(QueryInterface $query): QueryInterface;
+
+  /**
+   * @param  \QBXML\Queries\FilterInterface  $filter
+   * @return $this
+   */
+  public function addFilter(FilterInterface $filter): self;
 }
