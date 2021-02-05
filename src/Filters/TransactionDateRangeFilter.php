@@ -62,6 +62,24 @@ class TransactionDateRangeFilter implements FilterInterface
     $this->toTxnDate = $toTxnDate;
     return $this;
   }
+
+  /**
+   * @return DateMacro|null
+   */
+  public function getDateMacro(): ?DateMacro
+  {
+    return $this->dateMacro;
+  }
+
+  /**
+   * @param DateMacro|null $dateMacro
+   * @return self
+   */
+  public function setDateMacro(?DateMacro $dateMacro): self
+  {
+    $this->dateMacro = $dateMacro;
+    return $this;
+  }
   
   /**
    * Returns the filter's QBXML
@@ -70,6 +88,14 @@ class TransactionDateRangeFilter implements FilterInterface
    */
   public function __toString(): string
   {
-    // TODO: Implement __toString() method.
+    $property = '';
+    $weighted_properties = ['fromTxnDate', 'toTxnDate', 'dateMacro'];
+    foreach ($weighted_properties as $prop) {
+      if (!empty($this->$prop)) {
+        $property = $prop;
+        break;
+      }
+    }
+    return empty($property) ? '' : $this->toXml($property);
   }
 }

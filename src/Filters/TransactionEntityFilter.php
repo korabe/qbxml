@@ -133,6 +133,14 @@ class TransactionEntityFilter implements FilterInterface
    */
   public function __toString(): string
   {
-    // TODO: Implement __toString() method.
+    $property = '';
+    $weighted_properties = ['listId', 'fullName', 'listIdWithChildren', 'fullNameWithChildren'];
+    foreach ($weighted_properties as $prop) {
+      if (!empty($this->$prop)) {
+        $property = $prop;
+        break;
+      }
+    }
+    return empty($property) ? '' : $this->toXml($property);
   }
 }

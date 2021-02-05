@@ -41,6 +41,6 @@ class ReportTxnTypeFilter implements FilterInterface
    */
   public function __toString(): string
   {
-    // TODO: Implement __toString() method.
+    return "<TxnTypeFilter>{$this->txnTypeFilter}</TxnTypeFilter>";
   }
 }

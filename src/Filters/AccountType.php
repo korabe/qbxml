@@ -12,7 +12,7 @@ class AccountType implements \QBXML\Queries\FilterInterface
   /**
    * AccountType constructor.
    *
-   * @param  \QBXML\Enums\AccountType  $account_type
+   * @param  Type  $account_type
    */
   public function __construct(Type $account_type)
   {
@@ -20,7 +20,7 @@ class AccountType implements \QBXML\Queries\FilterInterface
   }
   
   /**
-   * @param  \QBXML\Enums\AccountType  $account_type
+   * @param  Type  $account_type
    * @return $this
    */
   public function setAccountType(Type $account_type): self

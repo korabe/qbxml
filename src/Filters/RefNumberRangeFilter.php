@@ -63,6 +63,14 @@ class RefNumberRangeFilter implements FilterInterface
    */
   public function __toString(): string
   {
-    // TODO: Implement __toString() method.
+    $property = '';
+    $weighted_properties = ['fromRefNumber', 'toRefNumber'];
+    foreach ($weighted_properties as $prop) {
+      if (!empty($this->$prop)) {
+        $property = $prop;
+        break;
+      }
+    }
+    return empty($property) ? '' : $this->toXml($property);
   }
 }

@@ -63,6 +63,14 @@ class ItemSiteFilter implements FilterInterface
    */
   public function __toString(): string
   {
-    // TODO: Implement __toString() method.
+    $property = '';
+    $weighted_properties = ['itemFilter', 'siteFilter'];
+    foreach ($weighted_properties as $prop) {
+      if (!empty($this->$prop)) {
+        $property = $prop;
+        break;
+      }
+    }
+    return empty($property) ? '' : $this->toXml($property);
   }
 }
