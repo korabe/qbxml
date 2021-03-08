@@ -21,9 +21,10 @@ class NameFilter implements FilterInterface
    */
   private string $name;
 
-  public function __construct()
+  public function __construct(MatchCriterion $matchCriterion, string $name)
   {
-    parent::__construct('NameFilter');
+    $this->matchCriterion = $matchCriterion;
+    $this->name = $name;
   }
 
   /**
@@ -67,11 +68,10 @@ class NameFilter implements FilterInterface
    */
   public function __toString(): string
   {
-    $filter = str_replace(__NAMESPACE__ . '\\', '', __CLASS__);
-    $qbxml = "<{$this->getFilterName()}>";
+    $qbxml = "<NameFilter>";
     $qbxml .= "<MatchCriterion>{$this->matchCriterion}</MatchCriterion>";
     $qbxml .= "<Name>{$this->name}</Name>";
-    $qbxml .= "</{$filter}>";
+    $qbxml .= "</NameFilter>";
     return $qbxml;
   }
 }

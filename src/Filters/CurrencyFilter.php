@@ -21,6 +21,18 @@ class CurrencyFilter implements FilterInterface
   private ?string $fullName;
 
   /**
+   * CurrencyFilter constructor.
+   *
+   * @param  string|null  $listId
+   * @param  string|null  $fullName
+   */
+  public function __construct(?int $listId = null, ?string $fullName = null)
+  {
+    $this->listId = $listId;
+    $this->fullName = $fullName;
+  }
+
+  /**
    * @return int|null
    */
   public function getListId(): ?int
@@ -63,6 +75,10 @@ class CurrencyFilter implements FilterInterface
    */
   public function __toString(): string
   {
-    // TODO: Implement __toString() method.
+    if (is_null($this->listId) && is_null($this->fullName)) {
+      throw new \InvalidArgumentException('You must set either ListID or FullName');
+    }
+    $tag = is_null($this->listId) ? "<FullName>{$this->fullName}</FullName>" : "<ListID>{$this->listId}</ListID>";
+    return "<CurrencyFilter>{$tag}</CurrencyFilter>";
   }
 }

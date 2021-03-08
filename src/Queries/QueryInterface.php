@@ -30,9 +30,9 @@ interface QueryInterface
   /**
    *
    * @param QueryInterface $query
-   * @return QueryInterface
+   * @return void
    */
-  public function merge(QueryInterface $query): QueryInterface;
+  public function merge(QueryInterface $query): void;
 
   /**
    * @param  \QBXML\Queries\FilterInterface  $filter
