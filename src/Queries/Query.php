@@ -3,6 +3,7 @@
 namespace QBXML\Queries;
 
 use Illuminate\Support\Collection;
+use QBXML\Enums\ListQueryType;
 
 /**
  * Class Query
@@ -54,8 +55,10 @@ class Query implements QueryInterface
   /**
    * @inheritDoc
    */
-  public function merge(QueryInterface $query): QueryInterface
+  public function merge(QueryInterface $query): void
   {
-    // TODO: Implement merge() method.
+    $this->filters = $this->filters
+      ->merge($query->filters)
+      ->sort(static fn ($a, $b) => (string)$a <=> (string)$b);
   }
 }

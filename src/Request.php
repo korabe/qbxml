@@ -24,7 +24,7 @@ class Request
    * @param OnError|null $onError
    */
   public function __construct(?Collection $queries = null,
-                              string $qbxmlVersion = '13.0', ?OnError $onError = null)
+                              string $qbxmlVersion = '14.0', ?OnError $onError = null)
   {
     $this->queries = $queries ?: new Collection();
     $this->qbxmlVersion = $qbxmlVersion;
@@ -56,7 +56,7 @@ class Request
    */
   public function setQbxmlVersion(string $version): self
   {
-    if (is_numeric($version) && (int)$version >= 1 && (int)$version <= 13) {
+    if (is_numeric($version) && (float)$version >= 1.0 && (float)$version <= 14.0) {
       $this->qbxmlVersion = $version;
     }
     throw new \InvalidArgumentException('Not a valid version of QBXML');
